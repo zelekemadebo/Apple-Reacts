@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CRUD Form</title>
+  </head>
+  <body>
+    <form action="http://localhost:2023/add-product" method="post">
+      <label for="name">User name:</label><br />
+      <input type="text" name="userName" />
+      <br /><br />
+      <label for="name">User Password:</label><br />
+      <input type="password" name="password" />
+      <br /><br />
+
+      <label for="name">User Id:</label><br />
+      <input type="number" name="userId" />
+      <br /><br />
+      <label for="name">Order Id:</label><br />
+      <input type="number" name="orderId" />
+      <br /><br />
+
+      <h1>Add Product</h1>
+      <label for="name">Product Id:</label><br />
+      <input type="text" name="productId" />
+      <br /><br />
+      <label for="name">Product URL:</label><br />
+      <input type="text" name="productUrl" />
+      <br /><br />
+      <label for="name">Product name:</label><br />
+      <input type="text" name="productName" />
+      <br /><br />
+      <label for="imgPath">Product image:</label><br />
+      <input type="text" name="productImage" />
+      <br /><br />
+      <label for="name">Product Link:</label><br />
+      <input type="text" name="productLink" />
+      <br /><br />
+      <label for="StartPrice">Starting price:</label><br />
+      <input type="text" name="startingPrice" />
+      <br /><br />
+      <label for="StartPrice">Price Range:</label><br />
+      <input type="text" name="priceRange" />
+      <br /><br />
+
+      <label for="briefDescription">Product Brief Description:</label><br />
+      <textarea name="productBriefDescription" cols="30" rows="10"></textarea>
+      <br /><br />
+      <label for="productDescription">Product Description:</label><br />
+      <textarea name="productDescription" cols="30" rows="10"></textarea>
+      <br /><br />
+      <input type="submit" value="Add product" />
+    </form>
+
+    <br />
+
+    <!-- <script>
+      function formSubmit(e) {
+        e.preventDefault();
+
+        return fetch("http://localhost:2022/update", {
+          method: "PUT",
+          headers: { "content-type": "application/json" },
+          body: JSON.stringify({
+            id: document.querySelector("#added-product input[name=id]").value,
+            updatedName: document.querySelector("input[name=updatedName]")
+              .value,
+          }),
+        });
+      }
+
+      document.getElementById("myForm").addEventListener("submit", formSubmit);
+
+      function deleteUser(e) {
+        e.preventDefault();
+        return fetch("http://localhost:2022/remove-user", {
+          method: "DELETE",
+          headers: { "content-type": "application/json" },
+          body: JSON.stringify({
+            id: document.querySelector("#delete-user input[name=id]").value,
+            updatedName: document.querySelector("input[name=updatedName]")
+              .value,
+          }),
+        })
+          .then((response) => response.jason())
+          .then((data) => console.log(data));
+      }
+      document
+        .getElementByID("delete-user")
+        .addEventListener("submit", deleteUser);
+    </script> -->
+    <script src="./myDB.js"></script>
+  </body>
+</html>

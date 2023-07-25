@@ -1,0 +1,13 @@
+// my api key = AIzaSyBu2XtIRwqmcoe3gk1hDTBLDMyeFhaEj6w
+// apple chanall id = UCE_M8A5yxnLfW0KghEeajjw
+
+// API requesting link:
+// https://www.googleapis.com/youtube/v3/search?key=
+// {YOUR APT KEY}&channelId={channel_id_here)&part=snippet,id&
+// order=date&maxResults=(number}
+
+//ths is how you find the apple channale key:
+https://www.googleapis.com/youtube/v3/channels?key={YOUR_API_KEY}&forUsername={CHANNEL_NAME}&part=id 
+
+// Final API request link:
+https://www.googleapis.com/youtube/v3/search?key=AIzaSyBu2XtIRwqmcoe3gk1hDTBLDMyeFhaEj6w&channelId=UCE_M8A5yxnLfW0KghEeajjw&part=snippet, id&order=date&maxResults=6
